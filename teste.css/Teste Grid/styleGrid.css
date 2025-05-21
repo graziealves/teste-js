@@ -5,49 +5,106 @@
 
 #container{
     display: grid;
-    grid-template-rows: 45px auto 45px;
-     grid-template-areas:
-     "header header header header"
-     "main main footer footer"
-     "sidebar sidebar section section";
+    grid-template-rows: 45px auto 45px auto;
 
-     gap:10px;
-     background-color: blanchedalmond;
-     justify-content: center;
-     column-gap: 40px;
-     border-radius: 20px ;
-     margin-left: 8px;
-     margin-right: 8px;
-     padding-top: 15px;
-     padding-bottom: 15px ;
+    grid-template-areas:
+    "header header header header"
+    "main main footer footer"
+    "sidebar sidebar section section"
+    "nav nav nav nav";
+
+    gap:10px;
+    background-color: #a6a6a6;
+    justify-content: center;
+    column-gap: 40px;
+    border-radius: 20px ;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px ;
      
 }
 
 header {
     grid-area: header;
-    background-color: blue;
+    background-color: #004aad;
     color:aliceblue;
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center;
     padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
   
 aside {
     grid-area: sidebar;
-    background-color: aqua;
 }
   
 main {
     grid-area: main;
-    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
   
 footer {
    grid-area: footer;
-   background-color: pink;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
 }
 
 section{
     grid-area: section;
-    background-color: blueviolet;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-controle{
+    margin-top: 60px;
+    text-align:center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+#container-manipulacao{
+    display: grid;
+    grid-template-rows: 45px auto 45px auto;
+    row-gap: 50px;
+
+    grid-template-areas:
+    "item1 item1 item1 item1" 
+    "item2 item2 item3 item3";
+
+    margin-top: 40px;
+    justify-content: center;
+    column-gap: 40px;
+    text-align: center;
+}
+
+.item1{
+    grid-area: item1;
+    background-color: #0097b2;
+    gap:20px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item2{
+    grid-area: item2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item3{
+    grid-area: item3;
+    font-family: Arial, Helvetica, sans-serif;
 }
