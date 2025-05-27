@@ -44,7 +44,6 @@
     grid-area: item2;
     background-color: #a6a6a6;
     border-radius: 30px;
-    padding-right: 15px;
     
 }
 
@@ -52,7 +51,6 @@
     grid-area: item3;
     background-color: #a6a6a6;
     border-radius: 30px;
-    padding-right:  2px;
 }
 
 .item4{
@@ -96,4 +94,3 @@
     padding-right: 20px;
     padding-left: 20px;
 }
-
