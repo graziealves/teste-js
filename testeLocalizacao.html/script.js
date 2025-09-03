@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button class="botao-localizacao" onclick="getLocation()">Localização</button>
-    <p id="demo"></p>
+// function localizacaoObtida(localizacao){
+//     console.log(localizacao);
+// }
 
-<script>
-    
+// function localizacaoNaoObtida(erro){
+//     console.error(erro);
+// }
+
+
+// navigator.geolocation.getCurrentPosition(localizacaoObtida,localizacaoNaoObtida)
+
+
+
 const x = document.getElementById("demo");
 
 function getLocation() {
@@ -29,7 +29,3 @@ function success(position) {
 function error() {
   alert("Posição não encontrada.");
 }
-</script>
-
-</body>
-</html>
